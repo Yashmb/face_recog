@@ -6,7 +6,7 @@ _**Step 1:**_ We start of by collecting our dataset. For this, I have used _Haar
 You can use the following code to collect the images and prepare the dataset.
 
 ![](/images/1.png)
-![](//2.png)
+![](/images/2.png)
 
 I have used the same block of code multiple times to collect all the training & testing images of me & my friend. You can collect images of more people as per your requirement.
 
