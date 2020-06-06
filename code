@@ -33,7 +33,7 @@ while True:
         face = cv2.resize(face_extractor(frame), (224, 224))
         
         # Save file in specified directory with unique name
-        file_name_path = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//train//images//' + str(count) + '.jpg'
+        file_name_path = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/train' + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -90,7 +90,7 @@ while True:
         face = cv2.resize(face_extractor(frame), (224, 224))
         
         # Save file in specified directory with unique name
-        file_name_path = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//train//dupli//' + str(count) + '.jpg'
+        file_name_path = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/train/duplicate/' + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -146,7 +146,7 @@ while True:
         face = cv2.resize(face_extractor(frame), (224, 224))
         
         # Save file in specified directory with unique name
-        file_name_path = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//test//images//' + str(count) + '.jpg'
+        file_name_path = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/test/' + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -201,7 +201,7 @@ while True:
         face = cv2.resize(face_extractor(frame), (224, 224))
         
         # Save file in specified directory with unique name
-        file_name_path = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//test//dupli//' + str(count) + '.jpg'
+        file_name_path = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/test/duplicate/' + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -278,8 +278,8 @@ print(model.summary())
 
 from keras.preprocessing.image import ImageDataGenerator
 
-train_data_dir = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//train'
-validation_data_dir = 'C://Users//SPARSH PANDEY//Desktop//mlops_ws//dataset//test'
+train_data_dir = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/train'
+validation_data_dir = 'C://Users/PC/Documents/mlops-ws/face_recog_samples/test'
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator(
